@@ -36,44 +36,29 @@ github_issue_tracker/
 
 
 Set up a virtual environment (recommended)
-
 python -m venv venv
 source venv/bin/activate   # (Linux/Mac)
 venv\Scripts\activate      # (Windows)
 
-
 Install dependencies
-
 pip install -r requirements.txt
 
 🔑 GitHub Authentication
-
 You need a GitHub Personal Access Token to authenticate.
-
 Go to GitHub → Developer Settings → Tokens
-.
-
 Generate a new token with repo scope.
-
 Export it as an environment variable:
 
 export GITHUB_TOKEN="your_personal_token"   # Linux/Mac
 set GITHUB_TOKEN="your_personal_token"      # Windows
 
 🚀 Usage
-
 Fetch and summarize issues for a repo:
-
 python main.py <owner> <repo>
-
-
 Example:
-
 python main.py octocat hello-world
 
-
 ✅ Example Output:
-
 🔍 Fetching issues for octocat/hello-world...
 
 #12 | Fix README formatting
@@ -88,27 +73,19 @@ Link: https://github.com/octocat/hello-world/issues/13
 🛠 Tech Stack
 
 Python 3.8+
-
 Requests
  – GitHub API communication
-
 Transformers
  – NLP summarization
-
 Torch
  – Required backend for models
-
 Rich
  – (Optional) pretty CLI output
 
 📌 Future Improvements
-
 ✅ Add --ai-label flag to auto-suggest issue labels.
-
 ✅ Export summaries as Markdown/HTML reports.
-
 ✅ Add interactive mode with Textual TUI.
 
 🤝 Contributing
-
 Pull requests are welcome! Please open an issue first to discuss any major changes.
