@@ -70,8 +70,7 @@ Summary: Implements a new API endpoint to fetch and create comments.
 Link: https://github.com/octocat/hello-world/issues/13
 ------------------------------------------------------------
 
-🛠 Tech Stack
-
+## 🛠 Tech Stack
 Python 3.8+
 Requests
  – GitHub API communication
